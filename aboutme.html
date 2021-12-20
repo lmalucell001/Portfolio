@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<htm>
+    <header>
+        <title>Laurent Malucelli</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./assets/style/main.css">
+    </header>
+
+    <body style="font-family: 'Bebas Neue', sans-serif;background-color:rgba(0, 0, 0, 0.8);">
+        <div class="topnav">
+            <a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a>
+            <br>
+            <br>
+            <br>
+            <a href="./infographie.html">Infographie / 3D</a>
+            <br>
+            <br>
+            <br>
+            <a href="./audiovisuel.html">AudioVisuel</a>
+            <br>
+            <br>
+            <br>
+            <a href="./webdesign.html">WebDesign</a>
+            <br>
+            <br>
+            <br>
+            <a class="active" href="./aboutme.html">À Propos de moi / contact</a>
+        </div>
+        <div class="contenu" style="color: white; overflow: hidden;font-family: 'Josefin Sans', sans-serif; ">
+            <div class="row row-cols-4 aboutme" style="padding-top: 50px;">
+                <div class="col-4" style="height: 100%;">
+                    <h1 style="font-family: 'Bebas Neue', sans-serif;">À propos de moi</h1>
+                    <img src="./assets/PP.jpg" width="100%">
+                </div>
+                <div class="col-8" style="margin-top: 50px; background-color:rgba(0, 0, 0, 0.3); margin-right: 20px; width: 60%;font-size: 22px;">
+                    <p>Bonjour je suis Laurent Malucelli, j'ai 23 ans et je suis élève en deuxième année de DUT MMI. Après 4 ans d'études supérieures dans l'informatique et le technique, j’ai choisi de poursuivre mes études dans une voie plus artistique qui me convient mieux. Je suis particulièrement attiré par l'illustration et le motion design. En dehors de mes études j'aime dessiner et jouer aux jeux vidéo avec mes amis en direct sur Twitch.tv .</p>
+                    <br>
+                    <p>Études :</p>
+                    <br>
+                    <ul>
+                        <li>DUT MMI première année 2020 - 2021 (année validée)</li>
+                        <li>Bachelor troisième année en développement web à YNOV 2019 - 2020 (Titre RNCP niv 2 obtenu)</li>
+                        <li>BTS SNIR 2017 - 2019 (obtenu)</li>
+                        <li>Bachelor de technologie première année 2016 - 2017 ENSAM Châlons-en-champagne (année validée)</li>
+                    </ul> 
+                    <br>
+                        <p>Compétences :</p>
+                    <br>
+                    <ul>
+                        <li>Photoshop           <span STYLE="padding:0 0 0 27px;">4/5</span></li>
+                        <li>Illustrator         <span STYLE="padding:0 0 0 20px;">3/5</span></li>
+                        <li>After Effect        <span STYLE="padding:0 0 0 16px;">4/5</span></li>
+                        <li>Première pro        <span STYLE="padding:0 0 0 14px;">3/5</span></li>
+                        <li>Vegas pro           <span STYLE="padding:0 0 0 35px;">5/5</span></li>
+                    </ul>
+                </div>
+                <div class="col-4"></div>
+                    <div class="col-8"><a class="btn btn-outline-light" href="https://drive.google.com/file/d/1xVHFVM0WihCHfkd5T_u0qr4D8e2BUUca/view?usp=sharing" style=" margin-top:50px; border-radius:0px; width:200px" role="button">Téléchargez mon CV</a></div>
+            </div>
+            <hr>
+            <div class="row row-cols-4 aboutme" style="padding-top: 50px;">
+                <div class="col-4" style="height: 100%;">
+                    <h1>Contactez-moi</h1>
+                </div>
+                <div class="col-4"><button type="button" class="btn btn-outline-light btn-copy" style=" margin-top:50px; margin-bottom: 50px; border-radius:0px;width:300px" value="Copier" class="js-copy" data-target="#tocopy" id="btnCopie">laurent.malucelli@mmibordeaux.com</button></div>
+                <div id="myAlert" class="alert alert-secondary collapse col-4" style="height: 60px; width: 100px; text-align: center;">
+                    <strong>Copié !</strong>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        const btnCopy = document.querySelector('.btn-copy');
+        const txtCopy = "laurent.malucelli@mmibordeaux.com";
+
+        btnCopy.addEventListener('click',()=>{
+            navigator.clipboard.writeText(txtCopy);
+        })
+
+        $(document).ready(function () {
+
+            $('#btnCopie').click(function () {
+                $('#myAlert').show('fade');
+
+                setTimeout(function () {
+                    $('#myAlert').hide('fade');
+                }, 2000);
+
+            });
+
+            });
+    </script>
+    </body>
+</html>

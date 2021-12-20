@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Laurent Malucelli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/style/main.css">
+</header>
+
+<body style="font-family: 'Bebas Neue', cursive;">
+    <div class="topnav">
+        <a class="active" href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli"
+                height="30px"></a>
+        <br>
+        <br>
+        <br>
+        <a href="./infographie.html">Infographie / 3D</a>
+        <br>
+        <br>
+        <br>
+        <a href="./audiovisuel.html">AudioVisuel</a>
+        <br>
+        <br>
+        <br>
+        <a href="./webdesign.html">WebDesign</a>
+        <br>
+        <br>
+        <br>
+        <a href="./aboutme.html">À Propos de moi / contact</a>
+    </div>
+    <div class="section" onclick="playVid()">
+        <video autoplay loop muted id="showreel">
+            <source src="./assets/showreel.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+<script>
+    var vid = document.getElementById("showreel");
+    var isPaused = false;
+
+    function playVid() {
+        if (isPaused == true) {
+            vid.play();
+            isPaused = false;
+        }
+        else {
+            vid.pause();
+            isPaused = true;
+        }
+    }
+</script>
+
+</html>
