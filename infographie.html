@@ -2,6 +2,11 @@
 <html style="
 background-color:rgba(0, 0, 0, 0.8);">
 <header>
+  <script>
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location.replace("./ComingSoon.html");
+      }
+  </script>
   <title>Laurent Malucelli</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,7 +103,7 @@ background-color:rgba(0, 0, 0, 0.8);">
       <span></span>
     </a>
     <nav role="navigation" id="topnav_responsive_menu">
-      <ul>
+      <ul style="font-family: 'Bebas Neue', cursive;">
         <li><a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a></li>
         <li><a class="active" href="./infographie.html">Infographie / 3D</a></li>
         <li><a href="./audiovisuel.html">AudioVisuel</a></li>
@@ -148,7 +153,7 @@ background-color:rgba(0, 0, 0, 0.8);">
           <img src="./assets/infographie-3D/CulturtalWave wallpaper.png" alt="Orange" height="90%" width="90%"
             style="margin-left: 5%;margin-top: 2%;">
         </div>
-        <div class="col-sm-6" style="color: black; font-size: 22px;">Voici le logo que j'ai créé pour le projet "It's Show Time". Durant ce projet mon équipe et moi devions réaliser le premier épisode d'une émission télévisée de notre invention. Nous avons choisi de réaliser une chronique autour des styles de musiques peu connus. Nous l'avons appelé "Cultural Wave".</div>
+        <div class="col-sm-6 description" style="color: black; font-size: 22px;">Voici le logo que j'ai créé pour le projet "It's Show Time". Durant ce projet mon équipe et moi devions réaliser le premier épisode d'une émission télévisée de notre invention. Nous avons choisi de réaliser une chronique autour des styles de musiques peu connus. Nous l'avons appelé "Cultural Wave".</div>
       </div>
     </div>
 
@@ -214,7 +219,7 @@ background-color:rgba(0, 0, 0, 0.8);">
           </div>
 
         </div>
-        <div class="col-sm-4" style="color: black;font-size: 22px;">Pour le stage de validation de la première année en DUT MMI, l’objectif était de créer une marque de vêtement à imprimer sur des t-shirts. Voici quelques réalisations de design que j'ai créées à l'aide des logiciels Photoshop Illustrator et Procreate. </div>
+        <div class="col-sm-4 description" style="color: black;font-size: 22px;">Pour le stage de validation de la première année en DUT MMI, l’objectif était de créer une marque de vêtement à imprimer sur des t-shirts. Voici quelques réalisations de design que j'ai créées à l'aide des logiciels Photoshop Illustrator et Procreate. </div>
       </div>
     </div>
 
@@ -267,7 +272,7 @@ background-color:rgba(0, 0, 0, 0.8);">
           </div>
 
         </div>
-        <div class="col-sm-4" style="color: black;font-size: 22px;">Dès la rentrée en DUT MMI, notre classe recevait pour consigne de créer dans un délai de deux semaines, un jeu vidéo ayant pour thème "Halo". Le joueur devait incarner Lÿs, une jeune fille devant récupérer des boules d'énergies vitales lumineuses afin de sauver sa planète au bord de la destruction. Le scénario, le character design de l’animation du personnage et la modélisation 3D des niveaux ont été réalisés par mes soins.</div>
+        <div class="col-sm-4 description" style="color: black;font-size: 22px;">Dès la rentrée en DUT MMI, notre classe recevait pour consigne de créer dans un délai de deux semaines, un jeu vidéo ayant pour thème "Halo". Le joueur devait incarner Lÿs, une jeune fille devant récupérer des boules d'énergies vitales lumineuses afin de sauver sa planète au bord de la destruction. Le scénario, le character design de l’animation du personnage et la modélisation 3D des niveaux ont été réalisés par mes soins.</div>
       </div>
     </div>
   </div>
@@ -280,12 +285,12 @@ background-color:rgba(0, 0, 0, 0.8);">
   <div id="myModal3" class="modal">
 
     <!-- Modal content -->
-    <div class="modal-content" style="height: 80vh; width: 120vh; background-color: rgba(255, 255, 255, 0.9);">
+    <div class="modal-content" style="height: 80vh; width: 160vh; background-color: rgba(255, 255, 255, 0.9);">
       <span class="close" id="croix3">&times;</span>
       <div class="row">
-        <div class="col-sm-8" style="height: 100%;"><img src="./assets/infographie-3D/portailPS (1).png" alt="Orange"
-            height="100%" width="73%" style="margin-left: 5%;margin-top: 2%;"></div>
-        <div class="col-sm-4" style="color: black;font-size: 22px;">Dans cet atelier individuel, nous devions nous inspirer des techniques d’un photographe ainsi que l’édition en post production avec LightRoom Classic. J’ai choisi le photographe tyedied (@_tyedied sur instagram) et pour représenter au mieux les effets que m’inspiraient ses clichés, j’ai utilisé de AdobeLight Room, Adobe Photoshop.</div>
+        <div class="col-sm-6" style="height: 100%;"><img src="./assets/infographie-3D/portailPS (1).png" alt="Orange"
+          height="90%" width="90%" style="margin-left: 5%;margin-top: 2%;"></div>
+        <div class="col-sm-6 description" style="color: black;font-size: 22px;">Dans cet atelier individuel, nous devions nous inspirer des techniques d’un photographe ainsi que l’édition en post production avec LightRoom Classic. J’ai choisi le photographe tyedied (@_tyedied sur instagram) et pour représenter au mieux les effets que m’inspiraient ses clichés, j’ai utilisé de AdobeLight Room, Adobe Photoshop.</div>
       </div>
     </div>
 
@@ -297,12 +302,12 @@ background-color:rgba(0, 0, 0, 0.8);">
   <div id="myModal4" class="modal">
 
     <!-- Modal content -->
-    <div class="modal-content" style="height: 80vh; width: 120vh; background-color: rgba(255, 255, 255, 0.9);">
+    <div class="modal-content" style="height: 80vh; width: 160vh; background-color: rgba(255, 255, 255, 0.9);">
       <span class="close" id="croix4">&times;</span>
       <div class="row">
-        <div class="col-sm-8" style="height: 100%;"><img src="./assets/infographie-3D/Plan de travail 1.jpg"
-            alt="Orange" height="100%" width="73%" style="margin-left: 5%;margin-top: 2%;"></div>
-        <div class="col-sm-4" style="color: black;font-size: 22px;">Dans cet exercice d’introduction à Adobe Photoshop en début de premier semestre du DUT MMI, nous devions individuellement refaire l’illustration de l’album de notre choix. J’ai choisi l’album Universe de Kids of 88. J’ai eu l’idée de représenter au dos de l’album, une représentation sous forme de constellation associé à un animal selon ce que la musique m’inspirait.</div>
+        <div class="col-sm-6" style="height: 100%;"><img src="./assets/infographie-3D/Plan de travail 1.jpg"
+            alt="Orange" height="90%" width="90%" style="margin-left: 5%;margin-top: 2%;"></div>
+        <div class="col-sm-6 description" style="color: black;font-size: 22px;">Dans cet exercice d’introduction à Adobe Photoshop en début de premier semestre du DUT MMI, nous devions individuellement refaire l’illustration de l’album de notre choix. J’ai choisi l’album Universe de Kids of 88. J’ai eu l’idée de représenter au dos de l’album, des constellations associées à des animaux selon ce que la musique m’inspirait.</div>
       </div>
     </div>
 

@@ -16,9 +16,9 @@
 </script>
 
 <body style="font-family: 'Bebas Neue', cursive;">
+    <div class="laurentmalucelli"><a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a></div>
     <div class="topnav">
-        <a class="active" href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli"
-                height="30px"></a>
+        <a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a>
         <br>
         <br>
         <br>
@@ -36,6 +36,24 @@
         <br>
         <a href="./aboutme.html">À Propos de moi / contact</a>
     </div>
+    
+  <div>
+    <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+      <!-- Some spans to act as a hamburger -->
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <nav role="navigation" id="topnav_responsive_menu">
+      <ul>
+        <li><a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a></li>
+        <li><a class="active" href="./infographie.html">Infographie / 3D</a></li>
+        <li><a href="./audiovisuel.html">AudioVisuel</a></li>
+        <li><a href="./webdesign.html">WebDesign</a></li>
+        <li><a href="./aboutme.html">À Propos de moi / contact</a></li>
+      </ul>
+    </nav>
+  </div>
     <div class="section" onclick="playVid()">
         <video autoplay loop muted id="showreel">
             <source src="./assets/showreel.mp4" type="video/mp4">
@@ -56,6 +74,20 @@
             isPaused = true;
         }
     }
+    function showResponsiveMenu() {
+    var menu = document.getElementById("topnav_responsive_menu");
+    var icon = document.getElementById("topnav_hamburger_icon");
+    var root = document.getElementById("root");
+    if (menu.className === "") {
+      menu.className = "open";
+      icon.className = "open";
+      root.style.overflowY = "hidden";
+    } else {
+      menu.className = "";                    
+      icon.className = "";
+      root.style.overflowY = "";
+    }
+  }
 </script>
 
 </html>

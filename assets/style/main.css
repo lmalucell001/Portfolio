@@ -24,6 +24,17 @@ html {
     scrollbar-width: none;
     font-family: 'Josefin Sans', sans-serif;
   }
+  .description::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.description {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  overflow: scroll;
+  height: 60vh;
+}
   body{
     font-family: 'Josefin Sans', sans-serif;
     background-color: transparent;
@@ -253,6 +264,7 @@ hr:after {
     padding-top: 0px;
     padding-left: 60px;
     margin: 0px;
+    z-index: 100;
   }
 
   #topnav_hamburger_icon {
@@ -320,7 +332,7 @@ hr:after {
 
   /* change color when opening the menu */
   #topnav_hamburger_icon.open span {
-    background: #333;
+    background: rgb(255, 255, 255);
   }
 
   /* the first span rotates 45° \ */

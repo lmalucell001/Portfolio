@@ -14,6 +14,7 @@
     </header>
 
     <body style="font-family: 'Bebas Neue', sans-serif;background-color:rgba(0, 0, 0, 0.8);">
+        <div class="laurentmalucelli"><a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a></div>
         <div class="topnav">
             <a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a>
             <br>
@@ -33,6 +34,23 @@
             <br>
             <a class="active" href="./aboutme.html">À Propos de moi / contact</a>
         </div>
+        <div>
+            <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+            <!-- Some spans to act as a hamburger -->
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+            <nav role="navigation" id="topnav_responsive_menu">
+            <ul>
+                <li><a href="./index.html"><img src="./assets/laurentMalucelli.gif" alt="Laurent Malucelli" height="30px"></a></li>
+                <li><a class="active" href="./infographie.html">Infographie / 3D</a></li>
+                <li><a href="./audiovisuel.html">AudioVisuel</a></li>
+                <li><a href="./webdesign.html">WebDesign</a></li>
+                <li><a href="./aboutme.html">À Propos de moi / contact</a></li>
+            </ul>
+            </nav>
+            </div>
         <div class="contenu" style="color: white; overflow: hidden;font-family: 'Josefin Sans', sans-serif; ">
             <div class="row row-cols-4 aboutme" style="padding-top: 50px;">
                 <div class="col-4" style="height: 100%;">
@@ -54,8 +72,8 @@
                         <p>Compétences :</p>
                     <br>
                     <ul>
-                        <li>Photoshop           <span STYLE="padding:0 0 0 27px;">4/5</span></li>
-                        <li>Illustrator         <span STYLE="padding:0 0 0 20px;">3/5</span></li>
+                        <li>Photoshop           <span STYLE="padding:0 0 0 27px;">5/5</span></li>
+                        <li>Illustrator         <span STYLE="padding:0 0 0 20px;">4/5</span></li>
                         <li>After Effect        <span STYLE="padding:0 0 0 16px;">4/5</span></li>
                         <li>Première pro        <span STYLE="padding:0 0 0 14px;">3/5</span></li>
                         <li>Vegas pro           <span STYLE="padding:0 0 0 35px;">5/5</span></li>
@@ -63,7 +81,7 @@
                     </ul>
                 </div>
                 <div class="col-4"></div>
-                    <div class="col-8"><a class="btn btn-outline-light" href="https://drive.google.com/file/d/1C0DBZ9hOK_grSMtqvHp-4i9qXNyFdCXR/view?usp=sharing" style=" margin-top:50px; border-radius:0px; width:200px" role="button">Téléchargez mon CV</a></div>
+                    <div class="col-8"><a class="btn btn-outline-light" href="https://drive.google.com/file/d/1khPv8VuAIMIcxcpAxi4GJGJ5RV3ME2YR/view?usp=sharing" style=" margin-top:50px; border-radius:0px; width:200px" role="button">Téléchargez mon CV</a></div>
             </div>
             <div class="row row-cols-4 aboutme" style="padding-top: 50px;">
                 <div class="col-4" style="height: 100%;">
@@ -97,6 +115,20 @@
             });
 
             });
+            function showResponsiveMenu() {
+                var menu = document.getElementById("topnav_responsive_menu");
+                var icon = document.getElementById("topnav_hamburger_icon");
+                var root = document.getElementById("root");
+                if (menu.className === "") {
+                menu.className = "open";
+                icon.className = "open";
+                root.style.overflowY = "hidden";
+                } else {
+                menu.className = "";                    
+                icon.className = "";
+                root.style.overflowY = "";
+                }
+            }
     </script>
     </body>
 </html>
