@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\assets",
+    "\\assets\\WebDesign"
   ],
-  "SelectedNode": "\\webdesign.html",
+  "SelectedNode": "\\burger.html",
   "PreviewInSolutionExplorer": false
 }
